@@ -1,0 +1,621 @@
+// Home Page SCSS here
+.hero-section {
+    background-image: url(../../assets/images/svg/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 104px;
+    @include tablet {
+        padding-top: 91px;
+    }
+}
+
+.hero-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include laptop {
+        flex-direction: column;
+    }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 575px;
+    margin-right: 77px;
+    margin-top: -30px;
+    flex-shrink: 0;
+    @include laptop {
+        margin-right: 0;
+        margin-top: 60px;
+        margin-bottom: -30px;
+        text-align: center;
+        align-items: center;
+    }
+    @include tablet {
+        margin-top: 0;
+        max-width: 284px;
+    }
+    & h1 {
+        font-family: $font-poppins;
+        color: $white;
+        font-size: 58px;
+        line-height: 1.19;
+        letter-spacing: -0.035em;
+        margin-bottom: 44px;
+        @include tablet {
+            margin-top: 0;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: -0.035em;
+            margin-bottom: 20px;
+        }
+        & span {
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url(../../assets/images/svg/underline-hero.svg);
+                width: 339px;
+                height: 16px;
+                bottom: -7px;
+                @include tablet {
+                    width: 170px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    bottom: -16px;
+                }
+            }
+        }
+    }
+    & p {
+        font-size: 18px;
+        color: $secondary-800;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 25px;
+        @include tablet {
+            margin-bottom: 12px;
+            padding: 0 10px;
+        }
+    }
+    & .btn {
+        margin-bottom: 40px;
+        @include tablet {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.hero-image {
+    position: relative;
+    top: 135px;
+    @include laptop {
+        top: 125px;
+        margin-bottom: -400px;
+        @include tablet {
+            top: 55px;
+            margin-bottom: -90px;
+        }
+    }
+    &:before {
+        width: 564px;
+        height: 564px;
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/svg/hero-dots.svg);
+        top: -44px;
+        left: -47px;
+        z-index: 0;
+        @include tablet {
+            width: 167px;
+            height: 167px;
+            background-size: cover;
+            top: -11px;
+            left: -16px;
+        }
+    }
+    & img {
+        max-width: initial;
+        position: relative;
+        z-index: 10;
+        @include tablet {
+            max-width: 283px;
+        }
+    }
+}
+
+.what-do-section {
+    padding: 226px 0 200px;
+    @include laptop {
+        padding: 576px 0 140px;
+    }
+    @include tablet {
+        padding: 186px 0 61px;
+    }
+}
+
+.what-do-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include laptop {
+        flex-direction: column;
+    }
+}
+
+.what-do-text {
+    flex-shrink: 0;
+    max-width: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 42px;
+    margin-right: 29px;
+    @include laptop {
+        max-width: 100%;
+        padding-top: 0;
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    @include tablet {
+        margin-bottom: 46px;
+    }
+    & .heading {
+        margin-bottom: 63px;
+        @include tablet {
+            margin-bottom: 15px;
+        }
+    }
+    & p {
+        margin-bottom: 26px;
+    }
+    .btn {
+        margin-top: 5px;
+    }
+}
+
+.what-do-image {
+    @include laptop {
+        position: relative;
+        left: -13px;
+    }
+    @include tablet {
+        left: -7px;
+    }
+    & img {
+        max-width: initial;
+        @include tablet {
+            max-width: 406px;
+        }
+    }
+}
+
+.benefit-section {
+    background-color: $gray-100;
+    padding: 100px 0 36px;
+    position: relative;
+    @include tablet {
+        padding: 51px 0 96px;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 416px;
+        height: 416px;
+        background-image: url(../../assets/images/svg/benefit-dots.svg);
+        background-size: contain;
+        right: -194px;
+        bottom: -210px;
+        @include laptop {
+            width: 316px;
+            height: 316px;
+            right: -164px;
+            bottom: -164px;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.benefit-block {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        display: block;
+    }
+    & .heading {
+        margin-bottom: 63px;
+        @include tablet {
+            max-width: 200px;
+            margin: 0 auto 45px;
+        }
+    }
+}
+
+.benefit-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include tablet {
+            flex-wrap: nowrap;
+            justify-content: unset;
+            padding-bottom: 30px;
+        }
+        & .swiper-slide {
+            width: 33%;
+            padding: 0 25px;
+            margin-bottom: 83px;
+            height: auto;
+            @include laptop {
+                width: 50%;
+            }
+            @include tablet {
+                margin-bottom: 6px;
+            }
+        }
+    }
+    & .benefit-unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h4 {
+            color: $gray-900;
+            line-height: 28px;
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        & p {
+            line-height: 24px;
+            font-size: 16px;
+            margin-top: 20px;
+            @include mobile {
+                margin-top: 9px;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.how-works-section {
+    background-image: url(../../assets/images/svg/how-work-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 114px;
+    @include mobile {
+        padding-top: 51px;
+    }
+}
+
+.how-works-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .heading {
+        margin-bottom: 111px;
+        @include tablet {
+            margin-bottom: 54px;
+        }
+    }
+}
+
+.how-works-content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 43px;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    & .how-works-unit {
+        margin-right: -30px;
+        width: 100%;
+        max-width: 314px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        @include laptop {
+            margin-right: 0px;
+            max-width: 264px;
+        }
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 66px;
+            max-width: 242px;
+        }
+        &::before {
+            content: '';
+            width: 131px;
+            height: 30px;
+            position: absolute;
+            background-image: url(../../assets/images/svg/hand-arrow.svg);
+            background-size: contain;
+            display: none;
+        }
+        &:first-child::before {
+            right: -60px;
+            top: -33px;
+            display: block;
+            @include tablet {
+                right: -13px;
+                top: 212px;
+                display: block;
+                transform: rotate(108deg);
+                width: 99px;
+                background-repeat: no-repeat;
+            }
+        }
+        &:last-child::before {
+            left: -117px;
+            bottom: -10px;
+            transform: scaleY(-1);
+            display: block;
+            @include tablet {
+                left: -9px;
+                bottom: 179px;
+                transform: scaleY(-1) rotate(-70deg);
+                display: block;
+                width: 98px;
+                background-repeat: no-repeat;
+            }
+        }
+        & img {
+            margin-right: 20px;
+            @include tablet {
+                margin-right: 0;
+                margin-bottom: 22px;
+            }
+        }
+        & h5 {
+            color: $white;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        & p {
+            font-size: 16px;
+            line-height: 24px;
+            color: $secondary-800;
+        }
+    }
+}
+
+.how-works-image {
+    position: relative;
+    left: 10px;
+    margin-bottom: -250px;
+    @include tablet {
+        left: 9px;
+        margin-bottom: -86px;
+        top: -72px;
+        & img {
+            max-width: 326px;
+        }
+    }
+}
+
+.get-started-section {
+    padding: 370px 0 100px;
+    @include laptop {
+        padding: 330px 0 50px;
+    }
+    @include tablet {
+        padding: 58px 0 17px;
+    }
+}
+
+.get-started-block {
+    background-color: $gray-100;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    padding: 103px 132px 77px 118px;
+    justify-content: space-between;
+    @include laptop {
+        padding: 103px 40px 77px 40px;
+    }
+    @include tablet {
+        flex-direction: column-reverse;
+        padding: 11px 12px 17px 12px;
+    }
+    & .get-started-image {
+        position: relative;
+        top: -19px;
+        @include laptop {
+            margin-right: 70px;
+        }
+        @include tablet {
+            margin-right: 0;
+            margin-top: 55px;
+            & img {
+                max-width: 298px;
+            }
+        }
+    }
+}
+
+.get-started-text {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+    @include tablet {
+        align-items: center;
+    }
+    & .heading {
+        margin-bottom: 67px;
+        @include tablet {
+            margin-bottom: 40px;
+        }
+    }
+    .btn {
+        margin-left: 57px;
+        margin-top: 16px;
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.get-started-content {
+    display: flex;
+    flex-direction: column;
+    & .get-started-unit {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 32px;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 27px;
+        }
+        & img {
+            flex-shrink: 0;
+            margin-right: 20px;
+            @include tablet {
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+        }
+        & h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            color: $gray-900;
+            margin-bottom: 16px;
+        }
+        & p {
+            font-size: 16px;
+            line-height: 24px;
+            color: $gray-500;
+        }
+    }
+}
+
+.form-section {
+    padding: 90px 0 133px;
+    @include tablet {
+        padding: 26px 0 87px;
+    }
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .heading {
+        margin-bottom: 63px;
+        @include tablet {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 660px;
+    gap: 25px;
+    @include tablet {
+        gap: 13px;
+    }
+    & .form-unit {
+        margin-bottom: 3px;
+        @include tablet {
+            margin-bottom: 7px;
+        }
+        & input {
+            width: 100%;
+            border: 1px solid $gray-600;
+            padding: 16px;
+            height: 54px;
+            border-radius: 5px;
+            font-size: 18px;
+            @include tablet {
+                font-size: 16px;
+            }
+        }
+        & select {
+            background-color: $white;
+            background-image: url(../../assets/images/svg/dropdown.svg);
+            background-repeat: no-repeat;
+            -webkit-appearance: none;
+            appearance: none;
+            background-position: right 16px center;
+            width: 100%;
+            border: 1px solid $gray-600;
+            padding: 16px 30px 16px 10px;
+            height: 54px;
+            border-radius: 5px;
+            font-size: 18px;
+            @include tablet {
+                font-size: 16px;
+            }
+        }
+    }
+    & .form-textarea {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @include tablet {
+            margin-top: 10px;
+        }
+        & textarea {
+            width: 100%;
+            border: 1px solid $gray-600;
+            padding: 13px 16px;
+            height: 98px;
+            border-radius: 5px;
+            resize: none;
+            font-size: 18px;
+            @include tablet {
+                font-size: 16px;
+            }
+        }
+    }
+    & .form-subscibe {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: -4px;
+        margin-bottom: 2px;
+        @include tablet {
+            margin-top: 19px;
+            margin-bottom: 24px;
+        }
+        & label {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    & .form-submit {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: center;
+    }
+}

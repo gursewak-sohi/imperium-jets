@@ -1,0 +1,74 @@
+//  Button SCSS
+.btn {
+    cursor: pointer;
+    font-family: $font-nunito;
+    border: none;
+    transition: $btn-transition;
+    &:active {
+        transform: scale(0.95);
+    }
+    &:disabled:active {
+        transform: scale(1);
+    }
+}
+
+.btn-sm {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 7px 20px;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.btn-md {
+    text-align: center;
+    font-size: 17px;
+    border-radius: 40px;
+    font-weight: 600;
+    padding: 9px 26px;
+    display: inline-block;
+    line-height: 28px;
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    color: $gray-800;
+    border: 1px solid $secondary;
+    &:hover {
+        background-color: darken($secondary, 5%);
+        border-color: darken($secondary, 5%);
+        color: $gray-800;
+    }
+    &:disabled {
+        opacity: 0.2;
+        pointer-events: none;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+    border: 1px solid $primary;
+    &:hover {
+        background-color: darken($primary, 5%);
+        border-color: darken($primary, 5%);
+        color: $white;
+    }
+    &:disabled {
+        opacity: 0.2;
+        pointer-events: none;
+    }
+}
+
+.btn-light {
+    background-color: $white;
+    color: $gray-800;
+    border: 1px solid $white;
+    &:hover {
+        background-color: lighten($secondary, 5%);
+        border-color: lighten($secondary, 5%);
+        color: $gray-800;
+    }
+}

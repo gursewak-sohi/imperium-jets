@@ -1,0 +1,68 @@
+//  Ulilites SCSS
+main {
+    overflow: hidden;
+}
+
+.container {
+    max-width: $container;
+    padding-left: $gutter-x;
+    padding-right: $gutter-x;
+    margin: 0 auto;
+    @include tablet {
+        padding-left: $gutter-x-xs;
+        padding-right: $gutter-x-xs;
+    }
+}
+
+.container-lg {
+    max-width: $container-lg;
+    padding-left: $gutter-x;
+    padding-right: $gutter-x;
+    margin: 0 auto;
+    @include mobile {
+        padding-left: $gutter-x-xs;
+        padding-right: $gutter-x-xs;
+    }
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    & img {
+        margin-right: 7px;
+        @include tablet {
+            width: 27px;
+        }
+    }
+    & h3 {
+        font-family: $font-poppins;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 122%;
+        letter-spacing: -0.02em;
+        color: $gray-900;
+        @include tablet {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+        }
+    }
+    &.header-light {
+        & h3 {
+            color: $white;
+        }
+    }
+    &.heading-md {
+        & h3 {
+            font-size: 32px;
+            line-height: 125%;
+            @include tablet {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: -0.02em;
+            }
+        }
+    }
+}

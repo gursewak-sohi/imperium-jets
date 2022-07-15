@@ -1,0 +1,37 @@
+// Variable SCSS
+// Fonts
+$font-nunito: ('Nunito Sans', sans-serif);
+$font-inter: ('Inter', sans-serif);
+$font-poppins: ('Poppins', sans-serif);
+// Colors
+$primary: #2B68DE;
+$secondary: #CAE7FC;
+$secondary-800: #D0EBFF;
+$gray-900: #111827;
+$gray-800: #0B2440; //button text
+$gray-700: #7B7B7B; // text color
+$gray-600: #7C8DB0; // input border
+$gray-500: #6B7280; // text color
+$gray-400: #9CA3AF; // footer text color
+$gray-300: #D1D5DB;
+$gray-200: #E5E7EB;
+$gray-100: #F9F9F9; //bg color
+$white: #FFFFFF;
+$black: #000000;
+$link: #2B68DE;
+// Breakpoints
+$mobile-width: 767px;
+$tablet-width: 991px;
+$laptop-width: 1199px;
+$desktop-width: 1399px;
+// Container Sizes
+$container-lg: 1349px;
+$container: 1198px;
+$gutter-x: 32px;
+$gutter-x-xs: 16px;
+// Transition
+$link-transition: 200ms all ease;
+$btn-transition: 300ms background-color ease,
+300ms color ease,
+300ms border-color ease,
+300ms opacity ease;
