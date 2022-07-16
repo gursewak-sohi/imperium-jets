@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperium Jets</title>
     <link rel="shortcut icon" href="assets/images/svg/favicon.svg" />
+    <!-- Lighbox CSS -->
+    <link href="assets/css/lightgallery-bundle.min.css" rel="stylesheet">
     <!-- Bundle CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -47,90 +49,64 @@
     </header>
     <!-- Main Section -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
+        <!-- Experience Section -->
+        <section class="experience-section">
             <div class="container">
-                <div class="hero-block">
-                    <div class="hero-text">
-                        <h1>Maximize your profit, sell private jet flights
-                            <span>By The Seat.</span></h1>
-                        <p>Benefit from the most luxury and profitable content in travel. For Free.</p>
+                <div class="experience-block">
+                    <div class="experience-text">
+                        <h1><span>WOW</span> effect that last forever
+                        </h1>
+                        <p>Turn customers into life long loyal fans</p>
                         <a href="javascript:;" class="btn btn-secondary btn-md">Get Started!</a>
                         <img src="assets/images/svg/review.svg" width="142" height="38" alt="review" />
                     </div>
-                    <div class="hero-image">
-                        <img src="assets/images/home/desktop.png" width="940" height="702" alt="desktop" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- What to do Section -->
-        <section class="what-do-section">
-            <div class="container">
-                <div class="what-do-block">
-                    <div class="what-do-text">
-                        <div class="heading">
-                            <img src="assets/images/svg/heading-dots.svg" width="37" height="32" alt="icon" />
-                            <h3>What we do</h3>
+                    <div class="experience-video">
+                        <button id="playVideo" class="play-video"><img src="assets/images/svg/play.svg" alt="play"></button>
+                        <div class="video-gallery">
+                            <a data-lg-size="1280-720" data-src="https://youtu.be/RzJsbi9ygqo?list=TLGGLiiVedliQOkxNDA3MjAyMg" data-poster="assets/images/experience/video-poster.png">
+                                <img width="854" height="480" src="assets/images/experience/video-poster.png" />
+                            </a>
                         </div>
-                        <p>We make private jet by the seat content available for immediate booking on your platform. Simple as that.</p>
-                        <p>Receive thousands of private jet by the seat flights inventory and make them available to purchase on your site or platform. Take advantage of the changing market and be the leading travel provider in your market.</p>
-                        <a href="javascript:;" class="btn btn-secondary btn-md">Get Started!</a>
-                    </div>
-                    <div class="what-do-image">
-                        <img src="assets/images/home/jet.png" width="890" height="534" alt="image" />
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Benefit Section -->
-        <section class="benefit-section">
-            <div class="container-lg">
-                <div class="benefit-block">
-                    <div class="heading heading-md">
+
+        <!-- Affordable Section -->
+        <section class="affordable-section">
+            <div class="container">
+                <div class="affordable-block">
+                    <div class="heading">
                         <img src="assets/images/svg/heading-dots.svg" width="37" height="32" alt="icon" />
-                        <h3>The benefit of By The Seat</h3>
+                        <h3>Fast, Comfortable and affordable. <br/> All your customer is looking for</h3>
                     </div>
-                    <div class="benefit-content">
+                    <div class="affordable-content">
                         <!-- Slider main container -->
-                        <div id="benefitSwiper" class="swiper">
+                        <div id="affordableSwiper" class="swiper">
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="benefit-unit">
+                                    <div class="affordable-unit">
                                         <img src="assets/images/svg/icon-fast.svg" width="48" height="48" alt="icon" />
                                         <h4>Fast</h4>
                                         <p>Don’t let your customer spend hours in crowded airport. Let them arrive 20 mins before departure to a private airport and save hours of teddies unnecessary travel time.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="benefit-unit">
+                                    <div class="affordable-unit">
                                         <img src="assets/images/svg/icon-comfort.svg" width="48" height="48" alt="icon" />
                                         <h4>Comfortable</h4>
                                         <p>Treat your customer like royalty and they will never leave, put your customer in the most luxuries flight experience known to man.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="benefit-unit">
+                                    <div class="affordable-unit">
                                         <img src="assets/images/svg/icon-affordable.svg" width="48" height="48" alt="icon" />
                                         <h4>Affordable</h4>
                                         <p>If you have business/first class customers, you have By The Seat customers, enjoy the most elite flight Expirence at a fraction of full charter flight, perfect for both leisure and business travellers.</p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="benefit-unit">
-                                        <img src="assets/images/svg/icon-profit.svg" width="48" height="48" alt="icon" />
-                                        <h4>Profitable</h4>
-                                        <p>No more you will be force to invest long hours to receive minimum returns. with Imperium you earn the highest commission in the market, on every sale.</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="benefit-unit">
-                                        <img src="assets/images/svg/icon-easy.svg" width="48" height="48" alt="icon" />
-                                        <h4>Easy to Connect</h4>
-                                        <p>Just plug the Imperium’s content to your platform or site and start selling private jet flights by the seat. Fully customisable white-label booking flow with 24/7 customer support.</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
@@ -140,87 +116,301 @@
                             <div class="swiper-button-next"></div>
 
                         </div>
+                        <!-- Images -->
+                        <div id="fadeImageWrapper" class="affordable-images">
+                            <img id="fadeImage0" src="assets/images/experience/fly-2.png" width="361" height="328" alt="image" />
+                            <img id="fadeImage1" src="assets/images/experience/fly-4.png" width="358" height="424" alt="image" />
+                            <img id="fadeImage2" src="assets/images/experience/fly-3.png" width="318" height="407" alt="image" />
+                            <img id="fadeImage3" class="show" src="assets/images/experience/fly-1.png" width="360" height="390" alt="image" />
+                            <img id="fadeImage4" src="assets/images/experience/fly-5.png" width="243" height="401" alt="image" />
+                        </div>
                     </div>
+                    <div class="affordable-text">(Real Imperium's Flight)</div>
                 </div>
             </div>
         </section>
-        <!-- How does it works Section -->
-        <section class="how-works-section">
-            <div class="container">
-                <div class="how-works-block">
-                    <div class="heading heading-md header-light">
-                        <img src="assets/images/svg/heading-dots.svg" width="37" height="32" alt="icon" />
-                        <h3>How does it work</h3>
+        <!-- Customer Section -->
+        <section class="customer-section">
+            <div class="heading">
+                <img src="assets/images/svg/heading-dots.svg" width="37" height="32" alt="icon" />
+                <h3>From Customers to Fans</h3>
+            </div>
+            <div class="sub-heading">Be the hero your customers need</div>
+            <div class="customer-block-top">
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-7.png" width="48" height="48" alt="avatar" />
                     </div>
-                    <div class="how-works-content">
-                        <div class="how-works-unit">
-                            <img src="assets/images/svg/icon-search.svg" width="41" height="41" alt="icon">
-                            <div>
-                                <h5>Search</h5>
-                                <p>Input your flight route or choose from an existing flight list.</p>
-                            </div>
-                        </div>
-                        <div class="how-works-unit">
-                            <img src="assets/images/svg/icon-book.svg" width="41" height="41" alt="icon">
-                            <div>
-                                <h5>Book</h5>
-                                <p>Pick your seat ,fill your travel info, and complete your purchase.</p>
-                            </div>
-                        </div>
-                        <div class="how-works-unit">
-                            <img src="assets/images/svg/icon-jet.svg" width="41" height="41" alt="icon">
-                            <div>
-                                <h5>Fly</h5>
-                                <p>Lean back, smile and get ready we are about To instead of ti depart on a private jet heading your destination!</p>
-                            </div>
-                        </div>
+                    <div class="content">
+                        <h4>Erick Cedeno</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“I can’t even begin to describe in words how awesome this experience was. !”</p>
                     </div>
-                    <div class="how-works-image">
-                        <img src="assets/images/home/desktop-2.png" width="734" height="552" alt="image" />
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-1.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Lian Fishbein</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Perfect flight experience”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-3.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Rinat Rokach</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Comfortable and peaceful”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-7.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Erick Cedeno</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“I can’t even begin to describe in words how awesome this experience was. !”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-1.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Lian Fishbein</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Perfect flight experience”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-3.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Rinat Rokach</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Comfortable and peaceful”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-7.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Erick Cedeno</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“I can’t even begin to describe in words how awesome this experience was. !”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-1.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Lian Fishbein</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Perfect flight experience”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-3.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Rinat Rokach</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Comfortable and peaceful”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-7.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Erick Cedeno</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“I can’t even begin to describe in words how awesome this experience was. !”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-1.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Lian Fishbein</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Perfect flight experience”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-3.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Rinat Rokach</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Comfortable and peaceful”</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="customer-block-bottom">
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-2.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Maxwel Payne Stark</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“What an amazing flight”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-4.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Sebastian Domenech</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“An absolutely incredible experience!”</p>
+                    </div>
+                </div>
+
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-5.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Ido Bartana</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Not having to go through the lines of security is amazing!”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-6.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Emily Karlsson</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Not having to go through the lines of security is amazing!”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-2.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Maxwel Payne Stark</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“What an amazing flight”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-4.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Sebastian Domenech</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“An absolutely incredible experience!”</p>
+                    </div>
+                </div>
+
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-5.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Ido Bartana</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Not having to go through the lines of security is amazing!”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-6.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Emily Karlsson</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Not having to go through the lines of security is amazing!”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-2.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Maxwel Payne Stark</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“What an amazing flight”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-4.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Sebastian Domenech</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“An absolutely incredible experience!”</p>
+                    </div>
+                </div>
+
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-5.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Ido Bartana</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Not having to go through the lines of security is amazing!”</p>
+                    </div>
+                </div>
+                <div class="customer-unit">
+                    <div class="avatar">
+                        <img src="assets/images/experience/avatar/avatar-6.png" width="48" height="48" alt="avatar" />
+                    </div>
+                    <div class="content">
+                        <h4>Emily Karlsson</h4>
+                        <h5>United States </h5>
+                        <img src="assets/images/svg/rating.svg" alt="rating" />
+                        <p>“Not having to go through the lines of security is amazing!”</p>
                     </div>
                 </div>
             </div>
+
         </section>
-        <!-- Get started Section -->
-        <section class="get-started-section">
-            <div class="container-lg">
-                <div class="get-started-block">
-                    <div class="get-started-image">
-                        <img src="assets/images/home/phone.png" width="441" height="617" alt="image" />
-                    </div>
-                    <div class="get-started-text">
-                        <div class="heading heading-md">
-                            <img src="assets/images/svg/heading-dots.svg" width="37" height="32" alt="icon" />
-                            <h3>How to Get Started</h3>
-                        </div>
-                        <div class="get-started-content">
-                            <div class="get-started-unit">
-                                <img src="assets/images/svg/step-1.svg" width="42" height="42" alt="icon" />
-                                <div>
-                                    <h4>Signup</h4>
-                                    <p>As Imperium partner and choose your preferred methods of receiving content; from dashboard login, search widget or API integration, we have them all.</p>
-                                </div>
-                            </div>
-                            <div class="get-started-unit">
-                                <img src="assets/images/svg/step-2.svg" width="42" height="42" alt="icon" />
-                                <div>
-                                    <h4>Connect</h4>
-                                    <p>Complete integration/on boarding to your platform or site, our technical team is ready to assist in any type of integration or support needed.</p>
-                                </div>
-                            </div>
-                            <div class="get-started-unit">
-                                <img src="assets/images/svg/step-3.svg" width="42" height="42" alt="icon" />
-                                <div>
-                                    <h4>Sell</h4>
-                                    <p>Thats It! You are living and running, start making serious profit while turning your customers into fans!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="javascript:;" class="btn btn-secondary btn-md">Get Started!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Get Started Form Section -->
         <section class="form-section">
             <div class="container">
@@ -371,7 +561,9 @@
 
 <!--  Swiper JS -->
 <script type="text/javascript" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+<!-- Video JS -->
+<script type="text/javascript" src="assets/js/lightgallery.min.js"></script>
+<script type="text/javascript" src="assets/js/video.js"></script>
 <!-- Custom JS -->
 <script type="text/javascript" src="assets/js/main.js"></script>
 

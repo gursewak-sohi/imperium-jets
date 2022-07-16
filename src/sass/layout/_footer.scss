@@ -1,6 +1,7 @@
 // Footer SCSS
 footer {
     padding-bottom: 40px;
+    border-top: 1px solid #E4E7EC;
     @include laptop {
         padding-bottom: 20px;
     }
@@ -9,7 +10,6 @@ footer {
 .footer-top {
     max-width: 1216px;
     margin: 0 auto;
-    border-top: 1px solid #E5E7EB;
     padding: 74px 0 3px;
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr;
@@ -189,7 +189,7 @@ footer {
         margin-left: 0;
         padding-bottom: 30px;
         margin-bottom: 32px;
-        border-bottom: 1px solid $gray-200;
+        border-bottom: 1px solid #E4E7EC;
     }
     & li:not(:last-child) {
         margin-right: 45px;
@@ -200,18 +200,23 @@ footer {
     }
 }
 
+.footer-copyright {
+    border-top: 1px solid #E4E7EC;
+    @include tablet {
+        border-top: none;
+    }
+}
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
     max-width: 1216px;
     margin: 0 auto;
     padding: 32px 0;
-    border-top: 1px solid $gray-200;
     @include tablet {
         flex-direction: column;
         text-align: center;
         padding: 0;
-        border-top: none;
     }
     & ul {
         display: flex;

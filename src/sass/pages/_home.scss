@@ -570,10 +570,17 @@
             background-position: right 16px center;
             width: 100%;
             border: 1px solid $gray-600;
-            padding: 16px 30px 16px 10px;
+            padding: 13px 30px 15px 10px;
             height: 54px;
             border-radius: 5px;
             font-size: 18px;
+            &:required:invalid {
+                color: #747474;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
             @include tablet {
                 font-size: 16px;
             }

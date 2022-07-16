@@ -9,3 +9,21 @@
         visibility: visible;
     }
 }
+
+@include keyframes(scrollLeftOne) {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-70%);
+    }
+}
+
+@include keyframes(scrollLeftTwo) {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(-70%);
+    }
+}
