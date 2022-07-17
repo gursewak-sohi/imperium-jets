@@ -395,17 +395,9 @@ body {
     visibility: visible;
   }
 }
-@keyframes scrollLeftOne {
+@keyframes scrollLeft {
   0% {
     transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-70%);
-  }
-}
-@keyframes scrollLeftTwo {
-  0% {
-    transform: translateX(-20%);
   }
   100% {
     transform: translateX(-70%);
@@ -2120,6 +2112,11 @@ footer {
 .affordable-block .heading img {
   margin-top: 7px;
 }
+@media (max-width: 991px) {
+  .affordable-block .heading img {
+    margin-top: 4px;
+  }
+}
 .affordable-block .affordable-text {
   position: absolute;
   bottom: 413px;
@@ -2295,7 +2292,7 @@ footer {
   z-index: 30;
 }
 .affordable-images img:hover {
-  transform: scale(1.5);
+  transform: scale(1.35);
   z-index: 70;
 }
 @media (max-width: 991px) {
@@ -2342,34 +2339,39 @@ footer {
   }
 }
 
-.customer-block-top {
+.customer-block {
   margin-top: 100px;
   display: flex;
+  flex-direction: column;
   will-change: transform;
   transform: translateX(-20%);
-  animation: scrollLeftOne 80s linear infinite;
+  animation: scrollLeft 80s linear infinite;
   width: fit-content;
 }
 @media (max-width: 991px) {
-  .customer-block-top {
+  .customer-block {
+    animation: scrollLeft 40s linear infinite;
     margin-top: 40px;
-    animation: scrollLeftOne 40s linear infinite;
   }
+}
+.customer-block:hover {
+  animation-play-state: paused;
+}
+
+.customer-block-top {
+  width: 100%;
+  display: flex;
 }
 
 .customer-block-bottom {
-  margin-top: 46px;
   display: flex;
-  will-change: transform;
-  transform: translateX(0);
-  margin-left: -100px;
-  animation: scrollLeftOne 80s linear infinite;
-  width: fit-content;
+  margin-top: 46px;
+  margin-left: -236px;
+  width: 100%;
 }
 @media (max-width: 991px) {
   .customer-block-bottom {
     margin-top: 28px;
-    animation: scrollLeftOne 40s linear infinite;
   }
 }
 
