@@ -4,11 +4,20 @@
     if (header) {
         window.onscroll = () => scrollFunction();
         const scrollFunction = () => {
-            if (document.body.scrollTop > 104 || document.documentElement.scrollTop > 104) {
-                header.classList.add('active');
+            if (window.innerWidth < 992) {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    header.classList.add('active');
+                } else {
+                    header.classList.remove('active');
+                }
             } else {
-                header.classList.remove('active');
+                if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+                    header.classList.add('active');
+                } else {
+                    header.classList.remove('active');
+                }
             }
+
         }
     }
 

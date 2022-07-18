@@ -25,11 +25,23 @@ main {
     }
 }
 
+.container-xl {
+    max-width: $container-xl;
+    padding-left: $gutter-x;
+    padding-right: $gutter-x;
+    margin: 0 auto;
+    @include mobile {
+        padding-left: $gutter-x-xs;
+        padding-right: $gutter-x-xs;
+    }
+}
+
 .heading {
     display: flex;
     align-items: center;
     & img {
         margin-right: 7px;
+        flex-shrink: 0;
         @include tablet {
             width: 27px;
         }
