@@ -2623,7 +2623,7 @@ footer {
 @media (max-width: 991px) {
   .misson-block {
     overflow: hidden;
-    padding: 52px 15px 0;
+    padding: 52px 15px 120px;
   }
 }
 .misson-block:before {
@@ -2662,6 +2662,8 @@ footer {
 @media (max-width: 991px) {
   .misson-text {
     margin-bottom: 28px;
+    position: static;
+    margin-bottom: 0;
   }
 }
 .misson-text .heading {
@@ -2676,6 +2678,12 @@ footer {
 @media (max-width: 991px) {
   .misson-text p {
     font-family: "Nunito Sans", sans-serif;
+  }
+}
+@media (max-width: 991px) {
+  .misson-text .btn {
+    position: absolute;
+    bottom: 35px;
   }
 }
 
@@ -2723,7 +2731,7 @@ footer {
 }
 @media (max-width: 991px) {
   .environment-section {
-    padding: 60px 0 46px;
+    padding: 60px 0 60px;
   }
 }
 
