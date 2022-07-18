@@ -636,6 +636,10 @@ main {
   cursor: pointer;
   display: none;
 }
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: 0 none;
+}
 @media (max-width: 991px) {
   .swiper-button-prev,
 .swiper-button-next {
@@ -1816,6 +1820,16 @@ footer {
     font-size: 16px;
   }
 }
+.form-content .form-unit input::placeholder {
+  color: #7B7B7B;
+  opacity: 1;
+}
+.form-content .form-unit input:-ms-input-placeholder {
+  color: #7B7B7B;
+}
+.form-content .form-unit input::-ms-input-placeholder {
+  color: #7B7B7B;
+}
 .form-content .form-unit select {
   background-color: #FFFFFF;
   background-image: url(../../assets/images/svg/dropdown.svg);
@@ -1831,7 +1845,7 @@ footer {
   font-size: 18px;
 }
 .form-content .form-unit select:required:invalid {
-  color: #747474;
+  color: #7B7B7B;
 }
 .form-content .form-unit select:focus {
   outline: none;
@@ -1864,6 +1878,16 @@ footer {
   .form-content .form-textarea textarea {
     font-size: 16px;
   }
+}
+.form-content .form-textarea textarea::placeholder {
+  color: #7B7B7B;
+  opacity: 1;
+}
+.form-content .form-textarea textarea:-ms-input-placeholder {
+  color: #7B7B7B;
+}
+.form-content .form-textarea textarea::-ms-input-placeholder {
+  color: #7B7B7B;
 }
 .form-content .form-subscibe {
   grid-column-start: 1;

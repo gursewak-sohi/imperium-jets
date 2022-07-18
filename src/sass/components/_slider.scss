@@ -36,6 +36,9 @@
     background-repeat: no-repeat;
     cursor: pointer;
     display: none;
+    &:focus {
+        outline: 0 none;
+    }
     @include tablet {
         display: flex;
     }

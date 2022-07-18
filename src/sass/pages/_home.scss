@@ -560,6 +560,16 @@
             @include tablet {
                 font-size: 16px;
             }
+            &::placeholder {
+                color: $gray-700;
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: $gray-700
+            }
+            &::-ms-input-placeholder {
+                color: $gray-700
+            }
         }
         & select {
             background-color: $white;
@@ -575,7 +585,7 @@
             border-radius: 5px;
             font-size: 18px;
             &:required:invalid {
-                color: #747474;
+                color: $gray-700;
             }
             &:focus {
                 outline: none;
@@ -602,6 +612,16 @@
             font-size: 18px;
             @include tablet {
                 font-size: 16px;
+            }
+            &::placeholder {
+                color: $gray-700;
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: $gray-700
+            }
+            &::-ms-input-placeholder {
+                color: $gray-700
             }
         }
     }
