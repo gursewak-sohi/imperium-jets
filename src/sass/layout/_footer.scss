@@ -1,6 +1,5 @@
 // Footer SCSS
 footer {
-    padding-bottom: 40px;
     border-top: 1px solid #E4E7EC;
     @include laptop {
         padding-bottom: 20px;
@@ -220,7 +219,6 @@ footer {
     }
     & ul {
         display: flex;
-        align-items: center;
         @include tablet {
             flex-direction: column;
         }
@@ -243,10 +241,27 @@ footer {
             }
         }
     }
-    & p {
-        font-family: $font-inter;
-        font-size: 14px;
-        line-height: 20px;
-        color: $gray-400;
+    & .external-links {
+        & p {
+            font-family: $font-inter;
+            font-size: 14px;
+            line-height: 20px;
+            color: $gray-400;
+        }
+        & div {
+            font-family: $font-inter;
+            font-size: 14px;
+            line-height: 20px;
+            color: $gray-400;
+            margin-top: 10px;
+            @include tablet {
+                margin-top: 20px;
+            }
+            & a {
+                font-family: $font-inter;
+                color: $gray-400;
+                text-decoration: underline;
+            }
+        }
     }
 }

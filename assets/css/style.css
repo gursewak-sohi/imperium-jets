@@ -863,7 +863,6 @@ header.active .toggler svg path {
 }
 
 footer {
-  padding-bottom: 40px;
   border-top: 1px solid #E4E7EC;
 }
 @media (max-width: 1199px) {
@@ -1114,7 +1113,6 @@ footer {
 }
 .footer-bottom ul {
   display: flex;
-  align-items: center;
 }
 @media (max-width: 991px) {
   .footer-bottom ul {
@@ -1141,11 +1139,28 @@ footer {
 .footer-bottom ul li a:hover {
   color: #545964;
 }
-.footer-bottom p {
+.footer-bottom .external-links p {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #9CA3AF;
+}
+.footer-bottom .external-links div {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9CA3AF;
+  margin-top: 10px;
+}
+@media (max-width: 991px) {
+  .footer-bottom .external-links div {
+    margin-top: 20px;
+  }
+}
+.footer-bottom .external-links div a {
+  font-family: "Inter", sans-serif;
+  color: #9CA3AF;
+  text-decoration: underline;
 }
 
 .hero-section {
@@ -1292,13 +1307,23 @@ footer {
     left: -16px;
   }
 }
-.hero-image img {
+.hero-image .lottie-player {
+  width: 940px;
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 991px) {
+  .hero-image .lottie-player {
+    max-width: 283px;
+  }
+}
+.hero-image > img {
   max-width: initial;
   position: relative;
   z-index: 10;
 }
 @media (max-width: 991px) {
-  .hero-image img {
+  .hero-image > img {
     max-width: 283px;
   }
 }
@@ -1353,7 +1378,7 @@ footer {
   }
 }
 .what-do-text .heading {
-  margin-bottom: 63px;
+  margin-bottom: 26px;
 }
 @media (max-width: 991px) {
   .what-do-text .heading {
@@ -1370,19 +1395,27 @@ footer {
 @media (max-width: 1199px) {
   .what-do-image {
     position: relative;
-    left: -13px;
+  }
+}
+.what-do-image .lottie-player {
+  width: 746px;
+  margin-left: 82px;
+}
+@media (max-width: 1399px) {
+  .what-do-image .lottie-player {
+    margin-left: 0;
   }
 }
 @media (max-width: 991px) {
-  .what-do-image {
-    left: -7px;
+  .what-do-image .lottie-player {
+    max-width: 338px;
   }
 }
-.what-do-image img {
+.what-do-image > img {
   max-width: initial;
 }
 @media (max-width: 991px) {
-  .what-do-image img {
+  .what-do-image > img {
     max-width: 406px;
   }
 }
@@ -1676,7 +1709,30 @@ footer {
 }
 .get-started-block .get-started-image {
   position: relative;
-  top: -19px;
+  top: -14px;
+  z-index: 0;
+  left: -30px;
+  z-index: 0;
+}
+.get-started-block .get-started-image::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 440px;
+  height: 440px;
+  background-image: url(../../assets/images/svg/ellipse.svg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  margin-top: -16px;
+}
+@media (max-width: 991px) {
+  .get-started-block .get-started-image::after {
+    width: 298px;
+    height: 298px;
+  }
 }
 @media (max-width: 1199px) {
   .get-started-block .get-started-image {
@@ -1685,10 +1741,21 @@ footer {
 }
 @media (max-width: 991px) {
   .get-started-block .get-started-image {
+    left: 0;
     margin-right: 0;
     margin-top: 55px;
   }
-  .get-started-block .get-started-image img {
+}
+.get-started-block .get-started-image .lottie-player {
+  width: 501px;
+}
+@media (max-width: 991px) {
+  .get-started-block .get-started-image .lottie-player {
+    width: 338px;
+  }
+}
+@media (max-width: 991px) {
+  .get-started-block .get-started-image > img {
     max-width: 298px;
   }
 }
