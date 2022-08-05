@@ -130,4 +130,18 @@
             elem.className = c.replace(name, "").replace(/   /g, " ").replace(/^ | $/g, ""); // remove name and extra blanks
         }
     }
+
+    const jetID = document.getElementById('jetLottie');
+    if (jetID) {
+        LottieInteractivity.create({
+            player: '#jetLottie',
+            mode: 'scroll',
+            actions: [{
+                visibility: [0.25, 1],
+                type: "play",
+                frames: [0, 782],
+            }, ]
+        });
+    }
+
 })();

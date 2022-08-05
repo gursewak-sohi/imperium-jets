@@ -1275,6 +1275,7 @@ footer {
 .hero-image {
   position: relative;
   top: 135px;
+  height: 702px;
 }
 @media (max-width: 1199px) {
   .hero-image {
@@ -1284,8 +1285,9 @@ footer {
 }
 @media (max-width: 1199px) and (max-width: 991px) {
   .hero-image {
+    height: 264px;
     top: 55px;
-    margin-bottom: -90px;
+    margin-bottom: -143px;
   }
 }
 .hero-image:before {
@@ -1307,14 +1309,47 @@ footer {
     left: -16px;
   }
 }
+.hero-image::after {
+  width: 827px;
+  height: 530px;
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/images/svg/blur.svg);
+  z-index: 0;
+  bottom: 10px;
+  left: 50%;
+  background-size: contain;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+@media (max-width: 1199px) {
+  .hero-image::after {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-image::after {
+    width: 240px;
+    height: 157px;
+    margin-left: 0;
+    bottom: 53px;
+  }
+}
 .hero-image .lottie-player {
-  width: 940px;
+  width: 890px;
   position: relative;
   z-index: 10;
+  top: -34px;
+  left: 26px;
+}
+@media (max-width: 1199px) {
+  .hero-image .lottie-player {
+    left: 0;
+  }
 }
 @media (max-width: 991px) {
   .hero-image .lottie-player {
-    max-width: 283px;
+    max-width: 267px;
   }
 }
 .hero-image > img {
